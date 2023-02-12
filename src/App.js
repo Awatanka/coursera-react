@@ -2,14 +2,15 @@ import "./App.css";
 import { useReducer } from "react";
 
 const reducer = (state, action) => {
-  if (action === "add") return { money: state.money + 10 };
-  if (action === "take") return { money: state.money - 10 };
+  if (action.type === "add") return { money: state.money + 10 };
+  if (action.type === "take") return { money: state.money - 10 };
   return new Error();
 };
 
 function App() {
   const initialState = { money: 100 };
   const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className="App">
       <h1> Wallet : {state.money}</h1>
