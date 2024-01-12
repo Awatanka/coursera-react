@@ -32,6 +32,8 @@ function App() {
       </div>
       {/* <DatePicker /> */}
     </>
+      <p>Some new paragraph</p>
+    </div>
   );
 }
 
