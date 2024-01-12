@@ -24,6 +24,7 @@ function App() {
           Take money from wallet
         </button>
       </div>
+      <p>Some new paragraph</p>
     </div>
   );
 }
